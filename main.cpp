@@ -68,6 +68,11 @@ int main(int argc, char **argv)
 				}
 			}
 		}
+		if (!ba.isEmpty())
+		{
+			data[index] = ba;
+			ba.clear();
+		}
 	}
 	file.close();
 
